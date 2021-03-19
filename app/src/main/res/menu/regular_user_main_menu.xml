@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/calendarFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/savedEventsMainFragment"
+        android:title="Saved Events"
+        android:icon="@drawable/ic_event" />
+    <item
+        android:id="@+id/advertiseMainFragment"
+        android:title="Advertise"
+        android:icon="@drawable/ic_message" />
+    <item
+        android:id="@+id/partyCodeMainFragment"
+        android:title="Party Code"
+        android:icon="@drawable/ic_qr_code" />
+    <item
+        android:id="@+id/editProfileMainFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_person" />
+</menu>
+
+    <!--        android:id="@+id/homeMainFragment"-->

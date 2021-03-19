@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    tools:context=".FragmentsMain.NowEventMainFragment">
+
+    <TextView
+        android:id="@+id/textViewNowEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        android:text="Now Event" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNowEventCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Party Code: "
+            android:textColor="@color/very_light_gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewNowEventRatingEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/very_light_gray"
+            android:text="Rating: " />
+
+        <TextView
+            android:id="@+id/textViewNowEventStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/very_light_gray"
+            android:text="Start At: " />
+
+        <TextView
+            android:id="@+id/textViewNowEventEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/very_light_gray"
+            android:text="End At: " />
+
+        <TextView
+            android:id="@+id/textViewNowEventPlayingDj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/very_light_gray"
+            android:text="Playing Dj: " />
+
+        <TextView
+            android:id="@+id/textViewNowEventPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/very_light_gray"
+            android:text="Place Name: " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/linearlayout_gradiant"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_blue"
+            android:text="Survey" />
+
+        <Button
+            android:id="@+id/buttonRateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_blue"
+            android:text="Rate Event" />
+
+        <Button
+            android:id="@+id/buttonRateDj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_blue"
+            android:text="Rate Dj" />
+
+        <Button
+            android:id="@+id/buttonRateOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_blue"
+            android:text="Rate Place" />
+
+        <Button
+            android:id="@+id/buttonExitParty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_gray"
+            android:textColor="@color/very_light_gray"
+            android:text="Go Out" />
+    </LinearLayout>
+
+</LinearLayout>

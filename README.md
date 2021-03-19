@@ -1,2 +1,3 @@
-# Android-1-GoPartyApp
-Android 1 course project
+# Android-Final-Project
+#Test Test 123 :P
+ 

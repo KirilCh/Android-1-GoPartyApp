@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/ic_event"
+    android:orientation="vertical"
+    tools:context=".FragmentsMain.CalendarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/very_light_gray">
+
+        <Button
+            android:id="@+id/buttonAddEvent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/ic_add_circle_24"
+            android:backgroundTint="@color/blue"
+
+            android:shadowColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <sun.bob.mcalendarview.MCalendarView
+            android:id="@+id/calendarHomepage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/very_light_gray"
+            android:paddingTop="10sp"
+            android:maxDate="12/31/2021"
+            android:minDate="01/01/2020"
+            android:paddingLeft="5sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045">
+
+        </sun.bob.mcalendarview.MCalendarView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTouchToSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5sp"
+            android:text="Touch on the event To save It !"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listViewCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="5sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
